@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Jura');
+
+body, html{
+  margin:0;
+  padding:0;
+  font-family: 'EB Garamond', serif;
+  box-sizing: border-box;
+}
+
+.home{
+  width: (100vw-17px);
+  height: 100vh;
+  padding-left: 25px;
+  padding-top: 40vh;
+  background-image: url('./images/My-Website-Background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: 'Jura', serif;
+  color: white;
+  margin: 0;
+  font-size: 48px
+}
+
+h2{
+  font-size: 36px;
+  font-weight: normal;
+}
+.home h2{
+  color: white;
+  margin:0;
+}
+
+p{
+  font-size: 20px;
+}
+
+.home p{
+  color: white;
+}
+
+.section-Container{
+  width: (100vw-17px);
+}
+
+.skills{
+  background: white;
+}
+
+.section-SubContainer{
+  width: 70vw;
+}
+
+.skillsIcon{
+  width: 140px;
+  height: 190px;
+  margin: 5vh 3vw;
+}
+
+#nodeJsImg, #angularImg{
+  width:165px;
+}
+
+#expressJsImg{
+  width: 310px;
+  height: 100px;
+  align-self: center;
+}
+
+.works{
+  background: lightgray;
+}
+
+.section-SubContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 320px;
+  height: 300px;
+  margin: 5vh auto;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 10px 0.5px;
+  transition: 0.5s ease;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+.card img{
+  width: 280px;
+}
+
+.card a{
+  text-decoration: none;
+}
+
+.contact i{
+  margin: 3vh 3vw;
+  margin-bottom: 8vh;
+  transition: 0.5s ease;
+  color: black;
+}
+
+.contactBtn{
+  background: black;
+  color: white;
+  font-family: 'EB Garamond', serif;
+  border: none;
+  font-size: 32px;
+  border-radius: 5px;
+  padding: 3vh 4vw;
+  cursor: pointer;
+  margin-bottom: 5vh;
+  transition: 0.5s ease;
+}
+
+.contact i:hover, .contactBtn:hover{
+  transform: scale(1.1)
+}
+
+.centeredColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fadeOut{
+  display: hidden;
+  opacity: 0;
+  transition: display 0s linear 300ms, opacity 300ms;
+}
+
+.fadeIn{
+  display: inherit;
+  opacity: 1;
+  transition: display 0s linear 300ms, opacity 300ms;
+}
+
+.hide{
+  display: none;
+}
+
+footer{
+  background:black;
+  opacity: 0.8;
+  color: white; 
+  height: 5vh;
+  text-align: center;
+  padding:2vh;
+}

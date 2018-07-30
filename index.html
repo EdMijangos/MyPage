@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Eduardo Mijangos | My portfolio</title>
+</head>
+<body>
+  <section class="home">
+    <!-- <h1>José Eduardo Mijangos Loeza</h1> -->
+    <h1>JOSE EDUARDO MIJANGOS LOEZA</h1>
+    <h2>Full-stack web developer</h2>
+    <p>I love to create new things. Come join me and let's make something awesome!</p>
+  </section>
+  <section class="skills section-Container centeredColumn">
+    <h2>My tech skills</h2> 
+    <div class="section-SubContainer" id="skillsIcons">
+      <img src="./images/icons/HTML_Logo.png" alt="html icon" class="skillsIcon">
+      <img src="./images/icons/CSS3_and_HTML5_logos_and_wordmarks.png" alt="css icon" class="skillsIcon">
+      <img src="./images/icons/Javascript-shield.png" alt="javascript icon" class="skillsIcon">
+      <img src="./images/icons/nodejs-logo-1.png" alt="nodejs icon" id="nodeJsImg" class="skillsIcon">
+      <img src="./images/icons/express.png" alt="expressjs icon" id="expressJsImg" class="skillsIcon">
+      <img src="./images/icons/mongoDB logo.png" alt="mongodb icon" class="skillsIcon">
+      <img src="./images/icons/angular-icon-logo-png-transparent.png" alt="angular icon" id="angularImg" class="skillsIcon">
+    </div>
+  </section>
+  <section class="works section-Container centeredColumn">
+    <h2>Some of my work</h2>
+    <div class="section-SubContainer">
+      <div class="card">
+        <a href="https://edmijangos.github.io/ " target="_blank"><img src="./images/logo.png" alt="game logo"></a>
+        <p>A simple shoot-em-all game made with HTML, CSS and Javascript. Repository <a target="_blank" href="https://github.com/EdMijangos/TheGame">here.</a></p>
+      </div>
+      <div class="card centeredColumn">
+        <a href="https://dietcalc.herokuapp.com/" target="_blank"><img src="./images/DietCalc2.png" alt="diet calc logo"></a>
+        <p>A calculator that recommends a diet based on your goals and data. Made with NodeJs, Express and MongoDB. Repository <a target="_blank" href="https://github.com/rafaremo/Diet-Calc">here</a></p>
+      </div>
+    </div>
+  </section>
+  <section class="contact section-Container centeredColumn">
+    <h2>Reaching me is very easy</h2>
+    <div>
+        <a href="https://github.com/EdMijangos " target="_blank"><i class="fab fa-github-square fa-7x"></i></a>
+        <a href="https://www.linkedin.com/in/jose-eduardo-mijangos-loeza/" target="_blank"><i class="fab fa-linkedin fa-7x"></i></a>
+    </div>
+    <div class="centeredColumn">
+        <form validated action="https://formcarry.com/s/V0JfXIdC1N6" method="POST" accept-charset="UTF-8" id="contactForm" class="centeredColumn hide">
+          <input type="text" placeholder="Your name" name="name">
+          <br>
+          <input type="email" placeholder="Your email" name="mail" required>
+          <br>
+          <textarea name="content" cols="30" rows="10"></textarea>
+          <br>
+          <button class="contactBtn">Submit</button>
+        </form>
+        <button class="contactBtn" id="contact-btn">Contact me</button>
+    </div>
+  </section>
+  <footer>Derechos reservados 2018</footer>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>  
+  <script src="main.js"></script>
+</body>
+</html>
