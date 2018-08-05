@@ -2,9 +2,8 @@
 var contactBtn = document.getElementById('contact-btn');
 var form = document.getElementById('contactForm');
 var skillsIcons = document.getElementById('skillsIcons')
-window.sr = ScrollReveal({reset:true});
 
-
+//fade out contact button
 contactBtn.addEventListener('click', function(){
   contactBtn.className += ' fadeOut';
   setTimeout(function(){
@@ -12,4 +11,19 @@ contactBtn.addEventListener('click', function(){
   }, 300)
 })
 
-sr.reveal('.skillsIcon', {container: skillsIcons}, 50);
+//fade in elements on scroll
+$(window).scroll( function(){ //scroll listener
+
+  /* Check the location of each desired element */
+  $('.hideme').each( function(i){
+    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+    /* If the object is completely visible in the window, fade it in */
+    if( bottom_of_window > bottom_of_object ){
+      $(this).animate({'opacity':'1'},500);
+    }
+  }); 
+});
+
+
