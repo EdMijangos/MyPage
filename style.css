@@ -52,6 +52,10 @@ p{
 
 .section-SubContainer{
   width: 70vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .skillsIcon{
@@ -72,13 +76,6 @@ p{
 
 .works{
   background: lightgray;
-}
-
-.section-SubContainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .card{
@@ -161,4 +158,26 @@ footer{
 
 .hideme{
   opacity: 0;
+}
+
+@media (max-width: 600px){
+  .home{
+    width: 100vw;
+    height: 100vh;
+    padding-left: 25px;
+    padding-top: 10vh;
+    background-image: url('./images/My-Website-Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+
+  .home h2{
+    margin-top: 5vh;
+  }
+
+  .home p{
+    margin-top: 9vh;
+  }
+
 }
