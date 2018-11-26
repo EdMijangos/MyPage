@@ -5,7 +5,7 @@ var skillsIcons = document.getElementById('skillsIcons')
 
 //fade out contact button
 contactBtn.addEventListener('click', function(){
-  contactBtn.className += ' fadeOut';
+  contactBtn.className += ' hide';
   setTimeout(function(){
     form.className = 'centeredColumn fadeIn'
   }, 300)

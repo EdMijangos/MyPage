@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script src='https://www.google.com/recaptcha/api.js?render=6LfVGH0UAAAAAK0OSlvX61hS_8PDnUv7jY0OlD2M'></script>
   <title>Eduardo Mijangos | My portfolio</title>
 </head>
 <body>
@@ -54,11 +55,12 @@
         <form validated action="https://formcarry.com/s/V0JfXIdC1N6" method="POST" accept-charset="UTF-8" id="contactForm" class="centeredColumn hide">
           <input type="text" placeholder="Your name" name="name">
           <br>
-          <input type="email" placeholder="Your email" name="mail" required>
+          <input type="email" placeholder="Your email" name="email" required>
           <br>
           <textarea name="content" cols="30" rows="10"></textarea>
           <br>
-          <button class="contactBtn">Submit</button>
+          <input type="submit" value="Send" class="contactBtn">
+          <input type="hidden" name="_gotcha">
         </form>
         <button class="contactBtn" id="contact-btn">Contact me</button>
     </div>
@@ -66,5 +68,13 @@
   <footer>All rights reserved 2018</footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="main.js"></script>
+  <script>
+    grecaptcha.ready(function() {
+    grecaptcha.execute('6LfVGH0UAAAAAK0OSlvX61hS_8PDnUv7jY0OlD2M', {action: 'action_name'})
+    .then(function(token) {
+    // Verify the token on the server.
+    });
+    });
+    </script>
 </body>
 </html>
