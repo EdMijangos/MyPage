@@ -3,6 +3,7 @@ var contactBtn = document.getElementById('contact-btn');
 var form = document.getElementById('contactForm');
 var skillsIcons = document.getElementById('skillsIcons')
 
+
 //fade out contact button
 contactBtn.addEventListener('click', function(){
   contactBtn.className += ' hide';
